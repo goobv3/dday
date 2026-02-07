@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+/* Default Vite Styles Reset */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Ensure importing theme if not done in App.jsx, but App.jsx handles it. 
+   Here we just ensure clean slate */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}

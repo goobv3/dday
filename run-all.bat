@@ -1,0 +1,6 @@
+@echo off
+echo Starting Backend Server...
+start "BigData D-Day Server" cmd /k "node server.js"
+echo Starting Frontend Client...
+start "BigData D-Day Client" cmd /k "npm run dev"
+echo Application started!

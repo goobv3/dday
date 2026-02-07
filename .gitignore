@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.*
+
+# Local Server Data (Don't commit user data)
+server-data/*.json
+# Keep the folder, ignore content? Or maybe just ignore json.
+# Let's ignore the json files inside, but keep folder if possible.
+# Actually, let's keep server-data/ if it's needed for structure, but ignore contents.
+!server-data/.keep
+

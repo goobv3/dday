@@ -1,0 +1,22 @@
+services:
+  # Frontend (React + Nginx) - Port 80
+  dday-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dday-web
+    ports:
+      - "80:80"
+    restart: always
+
+  # Backend (Node.js API) - Port 3000
+  dday-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: dday-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server-data:/app/server-data # Persist data outside container
+    restart: always

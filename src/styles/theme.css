@@ -1,0 +1,62 @@
+:root {
+    /* Cyberpunk / Big Data Neon Palette */
+    --bg-color: #0f172a;
+    /* Deep Slate */
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --neon-cyan: #00f3ff;
+    --neon-blue: #0066ff;
+    --neon-pink: #ec4899;
+    --neon-green: #10b981;
+    --neon-purple: #8b5cf6;
+    --neon-yellow: #fbbf24;
+    --bg-dark: #0f172a;
+    --border-color: #334155;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    /* Effects */
+    --glow-cyan: 0 0 10px rgba(0, 243, 255, 0.5);
+    --glow-purple: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.neon-text {
+    text-shadow: var(--glow-cyan);
+    color: var(--neon-cyan);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Reset */
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
