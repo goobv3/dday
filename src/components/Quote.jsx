@@ -17,7 +17,7 @@ const Quote = () => {
   const [quote, setQuote] = useState('');
 
   useEffect(() => {
-    fetch('http://goob.iptime.org:3000/api/quote')
+    fetch('/api/quote')
       .then(res => res.json())
       .then(data => {
         if (data.quote) {

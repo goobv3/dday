@@ -16,7 +16,7 @@ function App() {
 
   // --- Initial Load ---
   useEffect(() => {
-    fetch('http://goob.iptime.org:3000/api/data')
+    fetch('/api/data')
       .then(res => res.json())
       .then(data => {
         setAppData(data);
@@ -116,7 +116,7 @@ function App() {
 
   // Helper for saving
   const saveData = (data) => {
-    fetch('http://goob.iptime.org:3000/api/data', {
+    fetch('/api/data', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -148,7 +148,7 @@ function App() {
     // So we might keep this for manual backup if desired, or remove button.
     // For now, let's keep the function for potential manual use.
     try {
-      const res = await fetch('http://goob.iptime.org:3000/api/data', {
+      const res = await fetch('/api/data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(appData)
